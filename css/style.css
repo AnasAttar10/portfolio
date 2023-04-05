@@ -1,8 +1,10 @@
 :root {
-    --mainColor:#FF9301;
     --secondColor:#35302E;
-    --thirdColor:#1E1816;
+    --mainColor:#ff0047;
 
+  }
+  html{
+    scroll-behavior: smooth;
   }
 *{
     padding: 0;
@@ -10,19 +12,21 @@
     background-size: cover;
     box-sizing: border-box;
     text-transform: capitalize;
+    font-family: 'Poppins' ,sans-serif;
 }
 body{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+  background-color:#090809;
+  color: #fff; 
+
+}   
 a{
     text-decoration: none;
     color: white;
+    transition: color 0.5s ;
 }
 img {
     width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    border: 2px solid white;
+    height: 100%; 
 }
 .flex{
     display: flex;
@@ -35,24 +39,27 @@ img {
     margin: auto;
 }
 .spical-title{
-    color: var(--mainColor);
-    font-size: 4em;
-    margin-bottom: 40px ; 
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+
 }
-section {
-    margin: 40px 0;
-    padding: 20px;
+.about-me ,.my-services , .my-projects , .contact-me{
+    padding: 80px 10px 20px ;
 }
 .btn{
-    padding: 10px;
-    display: block;
-    margin: 20px auto 0;
+    padding: 14px 60px;
     cursor: pointer;
     background-color: var(--mainColor);
-    font-size: 18px;
+    font-size: 15px;
     color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.5s
 }
-
+.btn:hover{
+ background-color:#a30d29;
+}
 /* start navbar  */
 
 nav{
@@ -60,12 +67,12 @@ nav{
     justify-content: space-between;
 }
 .logo{
-    font-size: 25px;
+    font-size: 40px;
     font-weight: bold;
     color: white;
+    text-transform: lowercase;
 }
 .logo > span{
-    text-transform: lowercase;
     color: var(--mainColor);
 }
 .links-container{
@@ -73,7 +80,6 @@ nav{
     justify-content: space-between;
     align-items: center;
     gap: 0 20px;
-    font-size: 18px;
 }
 .links-container a:hover{
     color: var(--mainColor);
@@ -85,16 +91,15 @@ nav{
    position: relative;
    display: none;
 }
-.btn:hover{
-    background-color: var(--secondColor);
-}
+
 /* end navbar  */
 
 /* start header  */
 header{
     height: 100vh;
     position: relative;
-    background-image: url("../images/background-header.png");
+    background-image: url("../images2/background.png");
+    background-attachment: fixed;
 }
 .my-information-container{
     height: inherit;
@@ -112,169 +117,201 @@ header{
 .my-information-container h1{
     font-size: 60px;
     margin: 20px 0 ;
-    background: url(https://24.media.tumblr.com/tumblr_m87dri70zh1qzla33o1_500.gif);
-    background-size: cover;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 .my-information-container span {
-    font-size: 40px;
-    font-weight: bold;
     color: var(--mainColor);
+    font-weight: bold
 }
-
-
-
 
 /* end header  */
 
 /* start about me  */
-
 .about-me > div{
     justify-content: space-between;
+    padding: 10px;
     flex-wrap: wrap;
-    padding: 20px;
-    background-color: var(--secondColor);
-    border-radius: 50px 20px;
 }
 .about-me  figure{
-    width: 48%;
+    width: 35%;
+}
+.about-me  figure img {
+    border-radius: 15px;
 }
 .about-me-information{
-    width: 48%;
-    border-radius: 20px;
-}
-.about-me-information > P{
-    color: white;
-    font-size: 20px;
-    line-height: 50px;
+    width: 60%;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.about-me-information > P{
+    color: #fff;
+    padding: 10px 5px ;
+    line-height: 1.4;
+}
+.my-skills2{
+    padding: 10px ;
+}
+.about-me-information ul {
+    padding: 10px 0;
+    list-style: none;
+}
+.about-me-information ul li {
+    padding: 5px;
+}
+.my-skills2 h3{
+    position: relative;
+    padding: 5px 0 ;
+    margin: 10px 0;
+}
+.my-skills2 h3::after{
+    content: "";
+    width:50px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border: 2px solid var(--mainColor);
+}
 /* end about me  */
 
 
 
 /* start my skills  */
-.my-skills{
-    background-color: var(--thirdColor);
-    padding: 40px ;
-    background: url("../images/overlay.jpg") no-repeat center center fixed;
-    position: relative;
-}
-.my-skills .spical-title{
-    position: relative;
-    margin: 0;
-    z-index: 3;
-}
-.my-skills .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(85, 85, 85, 0.9);
-    z-index: 1;
-}
-.skills-container{
-    position: relative;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    z-index: 3;
-    margin: 40px auto ;
-}
-.skill{
-    width: 100px;
-    margin: 40px 0 0 0 ;
-    height: 100px;
-    border-radius: 20%;
-    background-color: var(--secondColor);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
 
-.skill > img {
-    width: 60%;
-    height: 60%;
-    display: block;
-    background-size: cover;
-    border-radius: 50%;
-    transition: transform .7s ease-in-out;
+.services-container{
+    justify-content: space-between;
+    padding: 40px 0;
+    flex-wrap: wrap;
+    gap: 20px 0;
 }
-.skill:hover.skill > img{
-    transform: rotate(360deg);
+.service{
+    padding: 20px;
+    width: 30%;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-weight: 100;
+    background-color: #232223;
+    transition: background-color 0.5s ,transform 0.5s;
+}
+.service > i{
+    padding: 10px 0;
+}
+.service > h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding: 10px 0;
+}
+.service > p{
+    font-size: 15px;
+}
+.service:hover{
+    background-color: var(--mainColor);
+    transform: translateY(-10px);
 }
 /* end my skills */
 
 
 
 /* start projects */
-.my-projects{
-    background-color: var(--thirdColor);
-}
+
 .prjects-container{
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 40px 0;
+    gap: 20px;
 }
 .project{
-    width: 32%; 
-    padding: 10px;
-    height: 700px;
-    margin: 20px 0;
-    box-shadow: 5px 10px 18px #383838;
-    position: relative;
     background-color: var(--secondColor);
+    width: 30%;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: all .5s ease-in-out;
+    position: relative;
     overflow: hidden;
-    border: 3px solid var(--mainColor);
 }
-.project > img {
+.overlay-project{
     width: 100%;
-    height: 50%;
-    border-radius: 0;
-    transition: all 0.3s;
-    transform: scale(1);
-    cursor: pointer;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(rgba(0,0,0,0.6) ,#ff0047);
+    padding: 0 40px;
+    transition: height 0.5s;
+    overflow: hidden;
 }
-.project > img:hover{
+.project:hover .overlay-project{
+    height: 100%;
+}
+.project h3 {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+.project-img{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+}
+.project-img > img {
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+}
+.project:hover img{
     transform: scale(1.1);
 }
-
-.project-information > h3 {
-    padding: 20px;
-    color: var(--mainColor)
+.overlay-project h3 {
+    padding: 0;
+    text-align: left;
 }
-.project-information > .languages{
+.overlay-project a {
     padding: 10px;
-    margin: 5px 0;
+    border-radius: 50%;
+    background-color: white;
+    color:var(--mainColor);
 }
-.project-information > .languages >span {
+.overlay-project a:hover{
+    color: white;
+    background-color: var(--secondColor);
+}
+.project .paragraphs{
+    padding: 10px ;
+    background-color: var(--secondColor);
+    border-radius: 4px ;
+}
+.project .paragraphs p {
+    font-size: 13px;
+    text-align: left;
+    padding: 5px 0;
+}
+.project .languages{
+    padding-bottom: 10px;
+}
+.languages >span {
     margin: 0 10px;
     color: #58a6f7;
     font-weight: bold;
-    font-size: 18px;
 }
-.project-information > .languages >span:nth-child(2){
+ .languages >span:nth-child(2){
     color: #6fd74d;
 }
-.project-information > .languages >span:nth-child(3){
+ .languages >span:nth-child(3){
     color: #ff70c1;
 }
-.project-information .paragraphs{
-    height: 170px;
-    overflow: auto;
-}
-.project-information  p {
-    text-align: left;
-    color: white;
-    padding: 5px 10px;
-    line-height: 20px;
-}
-.project-information .demo-btn{
-    position: absolute;
-    left: 50%;
-    bottom: 5px;
-    transform: translate(-50% , 0);
+
+.prjects-container + a {
+    display: block;
+    margin: auto;
 }
 
 /* end projects  */
@@ -285,52 +322,48 @@ header{
 .contact-me{
     justify-content: space-between;
     background-color: var(--secondColor);
-    color: white;
-    margin-bottom: 0;
+    /* padding: 20px 0; */
 }
-.contact-me > div {
+.contact-me .container > div {
+    padding: 40px 0;
     flex-wrap: wrap;
 }
 .contact-me  form {
     width: 60%;
+}
+.contact-me form > div {
+    margin: 15px 0;
 }
 .contact-me  form label , .contact-me  form input{
     display: block;
     width: 100%;
     padding: 10px;
     font-size: 20px;
-    text-align: left;
+    border: none;
 }
 .contact-me  form input{
-    border-radius: 20px;
+    border-radius: 15px;
     box-sizing: border-box;
 }
 .contact-me  form textarea{
     width: 100%;
-    border-radius: 20px;
-}
-.contact-me  form button{
     padding: 10px;
-    margin: 10px 0;
+    font-size: 20px;
+    border-radius: 15px;
 }
 
 .social-media-container{
     width: 40%;
     flex-direction: column;
-    justify-content: center;
 }
 .social-media-container > div {
-    margin: 20px;
+    padding: 10px;
+    margin: 5px 0 
 }
-.icon-container{
-    background-color: var(--mainColor);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px solid white;
-}
-.icon-container > i {
-    line-height: 50px;
+
+.social-media-container i {
+    cursor: pointer;
+    color:#ff0047;
 }
 .social-media-container > div {
     display: flex;
@@ -339,13 +372,20 @@ header{
 }
 .social-media-container h3 {
     text-transform: lowercase;
-    color: var(--mainColor);
+    font-size: 15px;
 }
  
 .icon-container:hover {
     background-color: var(--secondColor);
 }
-
+.other-social-media > i {
+    color: #fff;
+    transition: transform 0.5s , color 0.5s ;
+}
+.other-social-media > i:hover{
+    color: var(--mainColor);
+    transform: translateY(-5px);
+}
 
 /* end contact me  */
 
@@ -360,9 +400,15 @@ footer > p {
 /* start media query  */
 
 @media (max-width: 575.98px){
+    header{
+        background-image: url("../images2/phone-background.png");
+    }
+    .myname{
+        font-size: 60px;
+    }
     .spical-title{
         font-size: 3em;
-        margin: 20px 0 40px 0;
+
     }
     /* header  */
     #checked:checked ~ .links-container{
@@ -377,216 +423,411 @@ footer > p {
         top: 10%;
         padding: 20px;
         width: 100%;
-        background-color: var(--thirdColor);
-        z-index: 3;
+        background-color: var(--secondColor);
         display: none;
     }
     .links-container li{
         padding: 20px;
         text-align: center;
     }
-    .my-information-container{
-        width: 100%;
-        padding: 20px;
-        text-align: center;
+    .my-information-container {
+        justify-content: center;
     }
     .my-information-container h1{
         font-size: 45px;
     }
-    .my-information-container span{
-        font-size: 25px;
+    .my-introduction span{
+        font-size: 45px;
     }
     .my-information-container p{
         width: 100%;
     }
+
     /* about me  */
-    .about-me > div{
-        width: 100%;
-        border-radius: 0;
-    }
-    .about-me .spical-title{
-        font-size: 2.5em;
-    }
+
     .about-me .about-me-information{
         width: 100%;
+        padding: 40px 20px;
+        /* padding: 10px ; */
+        background-color: var(--secondColor);
+        border-radius: 15px;
+    }
+    .my-skills2 h3{
+        position: relative;
+        padding: 5px 0 ;
+    }
+    .my-skills2 h3::after{
+        content: "";
+        color: white;
+        width: 20%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        border: 2px solid var(--mainColor);
     }
     .about-me > div > figure{
         width: 100%;
-    }
-    .about-me > div > figure img {
-        width: 100%;
-    }
-    .about-me-information{
-        width: 100%;
+        margin-bottom: 20px;
     }
     .about-me-information > P{
         color: white;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 30px;
+        margin-top: 20px;
     }
+    .about-me .btn{
+        display: block;
+        width: 100%;
+    }
+
     /* projects  */
+
     .project{
         width: 100%;
     }
-    .project-information .paragraphs{
-        height: 130px;
-        overflow: auto;
-    }
-    .project-information > .languages >span {
-        font-size: 15px;
-    }
-    /* skills */
-    .skills-container{
-        gap: 0;
-    }
-    .social-media-container{
+
+
+    /* services  */
+    .service{
         width: 100%;
     }
+
     /* contact me  */
+
     .contact-me  form{
+        width: 100%;
+    }
+    .social-media-container{
         width: 100%;
     }
     /* footer */
     footer > p{
-        font-size: 15px;
+        font-size: 12px;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
+    header{
+        background-image: url("../images2/phone-background.png");
+    }
+    .myname{
+        font-size: 60px;
+    }
     .spical-title{
         font-size: 3em;
-        margin: 20px 0 40px 0;
+
     }
-    .my-information-container{
+    /* header  */
+    #checked:checked ~ .links-container{
+        display: block;
+    }
+    .bar{
+        display: block;
+    }
+    .links-container{
+        position: absolute;
+        right: 0;
+        top: 10%;
+        padding: 20px;
         width: 100%;
+        background-color: var(--secondColor);
+        display: none;
+    }
+    .links-container li{
         padding: 20px;
         text-align: center;
+    }
+    .my-information-container {
+        justify-content: center;
+    }
+    .my-information-container h1{
+        font-size: 45px;
+    }
+    .my-introduction span{
+        font-size: 45px;
     }
     .my-information-container p{
         width: 100%;
     }
-    .project{
-        width: 100%;
-    }
+
+    /* about me  */
+
     .about-me .about-me-information{
         width: 100%;
+        padding: 40px 20px;
+        /* padding: 10px ; */
+        background-color: var(--secondColor);
+        border-radius: 15px;
+    }
+    .my-skills2 h3{
+        position: relative;
+        padding: 5px 0 ;
+    }
+    .my-skills2 h3::after{
+        content: "";
+        color: white;
+        width: 20%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        border: 2px solid var(--mainColor);
     }
     .about-me > div > figure{
         width: 100%;
-    }
-    .about-me > div > figure img {
-        width: 100%;
-    }
-    .about-me-information{
-        width: 100%;
+        margin-bottom: 20px;
     }
     .about-me-information > P{
         color: white;
-        font-size: 18px;
-        line-height: 60px;
+        font-size: 14px;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+    .about-me .btn{
+        display: block;
+        width: 100%;
+    }
+
+    /* projects  */
+
+    .project{
+        width: 100%;
+    }
+
+
+    /* services  */
+    .service{
+        width: 100%;
+    }
+
+    /* contact me  */
+
+    .contact-me  form{
+        width: 100%;
     }
     .social-media-container{
         width: 100%;
     }
-    .contact-me  form{
-        width: 100%;
-    }
+    /* footer */
     footer > p{
-        font-size: 15px;
+        font-size: 12px;
     }
-
- }
+}
 
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .my-information-container{
+    header{
+        background-image: url("../images2/phone-background.png");
+    }
+    .myname{
+        font-size: 60px;
+    }
+    .spical-title{
+        font-size: 3em;
+
+    }
+    /* header  */
+    #checked:checked ~ .links-container{
+        display: block;
+    }
+    .bar{
+        display: block;
+    }
+    .links-container{
+        position: absolute;
+        right: 0;
+        top: 10%;
+        padding: 20px;
         width: 100%;
+        background-color: var(--secondColor);
+        display: none;
+    }
+    .links-container li{
         padding: 20px;
         text-align: center;
+    }
+    .my-information-container {
+        justify-content: center;
+    }
+    .my-information-container h1{
+        font-size: 45px;
+    }
+    .my-introduction span{
+        font-size: 45px;
     }
     .my-information-container p{
         width: 100%;
     }
-    .project{
-        width: 100%;
-        height: 600px;
-    }
-    .about-me .spical-title{
-        font-size: 3em;
-        margin: 20px 0 40px 0;
-    }
+
+    /* about me  */
+
     .about-me .about-me-information{
         width: 100%;
+        padding: 40px 20px;
+        /* padding: 10px ; */
+        background-color: var(--secondColor);
+        border-radius: 15px;
+    }
+    .my-skills2 h3{
+        position: relative;
+        padding: 5px 0 ;
+    }
+    .my-skills2 h3::after{
+        content: "";
+        color: white;
+        width: 20%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        border: 2px solid var(--mainColor);
     }
     .about-me > div > figure{
         width: 100%;
-    }
-    .about-me > div > figure img {
-        width: 100%;
-    }
-    .about-me-information{
-        width: 100%;
+        margin-bottom: 20px;
     }
     .about-me-information > P{
         color: white;
-        font-size: 18px;
-        line-height: 60px;
+        font-size: 14px;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+    .about-me .btn{
+        display: block;
+        width: 100%;
+    }
+
+    /* projects  */
+
+    .project{
+        width: 100%;
+    }
+
+
+    /* services  */
+    .service{
+        width: 100%;
+    }
+
+    /* contact me  */
+
+    .contact-me  form{
+        width: 100%;
     }
     .social-media-container{
         width: 100%;
     }
-    .contact-me  form{
-        width: 100%;
-    }
+    /* footer */
     footer > p{
-        font-size: 15px;
+        font-size: 12px;
     }
- }
+}
 
 
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-    .my-information-container{
+    header{
+        background-image: url("../images2/phone-background.png");
+    }
+    .myname{
+        font-size: 60px;
+    }
+    .spical-title{
+        font-size: 3em;
+
+    }
+    /* header  */
+    #checked:checked ~ .links-container{
+        display: block;
+    }
+    .bar{
+        display: block;
+    }
+    .links-container{
+        position: absolute;
+        right: 0;
+        top: 10%;
+        padding: 20px;
         width: 100%;
+        background-color: var(--secondColor);
+        display: none;
+    }
+    .links-container li{
         padding: 20px;
         text-align: center;
+    }
+    .my-information-container {
+        justify-content: center;
+    }
+    .my-information-container h1{
+        font-size: 45px;
+    }
+    .my-introduction span{
+        font-size: 45px;
     }
     .my-information-container p{
         width: 100%;
     }
-    .project{
-        width: 100%;
-    }
-    .about-me .spical-title{
-        font-size: 3em;
-        margin: 20px 0 40px 0;
-    }
+
+    /* about me  */
+
     .about-me .about-me-information{
         width: 100%;
+        padding: 40px 20px;
+        /* padding: 10px ; */
+        background-color: var(--secondColor);
+        border-radius: 15px;
+    }
+    .my-skills2 h3{
+        position: relative;
+        padding: 5px 0 ;
+    }
+    .my-skills2 h3::after{
+        content: "";
+        color: white;
+        width: 20%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        border: 2px solid var(--mainColor);
     }
     .about-me > div > figure{
         width: 100%;
-    }
-    .about-me > div > figure img {
-        width: 100%;
-    }
-    .about-me-information{
-        width: 100%;
+        margin-bottom: 20px;
     }
     .about-me-information > P{
         color: white;
-        font-size: 18px;
-        line-height: 60px;
+        font-size: 14px;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+    .about-me .btn{
+        display: block;
+        width: 100%;
+    }
+
+    /* projects  */
+
+    .project{
+        width: 100%;
+    }
+
+
+    /* services  */
+    .service{
+        width: 100%;
+    }
+
+    /* contact me  */
+
+    .contact-me  form{
+        width: 100%;
     }
     .social-media-container{
         width: 100%;
     }
-    .contact-me  form{
-        width: 100%;
-    }
+    /* footer */
     footer > p{
-        font-size: 15px;
+        font-size: 12px;
     }
- }
+}
 
 
 @media (min-width: 1200px) { 

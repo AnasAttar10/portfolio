@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Anas Attar Portfolio</title>
 </head>
-<body > 
+<body> 
     <header>
         <nav class="flex container">
-            <div class="logo flex">Port <span> folio</span></div>
+            <div class="logo flex"><span>a</span>ttar</div>
             
             <label for="checked" class="bar">
                 <i class="fa-solid fa-bars fa-2x"></i> 
@@ -23,17 +23,15 @@
 
             <ul class="links-container flex">
                 <li><a href="#aboutme">about me </a></li>
-                <li><a href="#skills">skills</a></li>
+                <li><a href="#services">services</a></li>
                 <li><a href="#projects">projects </a></li>
                 <li><a href="#contactme">contact me  </a></li>
             </ul>
 
         </nav>
         <div class="my-information-container flex  container">
-                <span>Hi , </span>
-                <h1 class="my-introduction " data-aos="fade-left" data-aos-duration="3000"> i'am anas attar </h1>
-                <span>a Full Stack Developer</span>
-                <p>Full Stack Developer with a passion for creating beautiful, responsive, and user-centric applications. I strive to build future proof applications by writing clean, scalable, and reusable code.</p>
+                <h1 class="my-introduction" >Hi , i'am <span class="myname">anas</span></h1>
+                <p><span>Full Stack Developer </span>with a passion for creating beautiful, responsive, and user-centric applications. I strive to build future proof applications by writing clean, scalable, and reusable code.</p>
         </div>
 
     
@@ -43,13 +41,22 @@
     <section class="about-me" id="aboutme">
         <div class="container flex">
             <figure>
-                <img src="images/hero_1.jpg.webp" alt="office">
+                <img src="images2/user.png" alt="user">
             </figure>
-            <div class="about-me-information">
+            <div class="about-me-information flex">
                 <h2 class="spical-title">About me</h2>
-                <p> I Graduated from Palestine Technical University - Khadoori in 2021, with Bachelor's degree in Computer Systems Engineering.</p>
-                <p>Have 2+ years experience in web development.</p>
-                <p>Love writing, play football and edit videos.</p>
+                <p> I Graduated from Palestine Technical University - Khadoori in 2021, with Bachelor's degree in Computer Systems Engineering.<br>
+                Have 2+ years experience in web development , Love writing, play football and edit videos.</p>
+                <div class="my-skills2">
+                    <h3>my skills </h3>
+                    <ul>
+                        <li>html5</li>
+                        <li>css3</li>
+                        <li>js</li>
+                        <li>node</li>
+                    </ul>
+                </div>
+
                 <a  class="download-btn" href="AnasAttar.pdf" title="my cv" download>
                     <button class="btn">Download CV</button>
                 </a>
@@ -57,96 +64,126 @@
         </div>
     </section>
 
-    <section class="my-skills" id="skills">
-            <h2 class="spical-title center">my skills </h2>
-            <div class="skills-container flex container">
-                <div class="skill" data-aos="fade-right" data-aos-duration="3000"><img src="images/html5.png" alt="html5 icon"></div>
-                <div class="skill" data-aos="fade-right" data-aos-duration="3000"><img src="images/css33.jpg" alt="css3 icon "></div>
-                <div class="skill" data-aos="fade-down" data-aos-duration="3000"><img src="images/js.png" alt="js icon"></div>
-                <div class="skill" data-aos="fade-left" data-aos-duration="3000"><img src="images/react.webp" alt="react icon"></div>
-                <div class="skill" data-aos="fade-right" data-aos-duration="3000"><img src="images/mongodb.jpg" alt="mongoDB icon "></div>
-                <div class="skill" data-aos="fade-right" data-aos-duration="3000"><img src="images/mysql.png" alt="mysql icon"></div>
-                <div class="skill" data-aos="fade-up" data-aos-duration="3000"><img src="images/node.jpg" alt="node icon"></div>
+
+    <section class="my-services" id="services">
+            <div class="container">
+            <h2 class="spical-title">my services </h2>
+            <div class="services-container flex">
+                <div class="service">
+                    <i class="fa-solid fa-pen-to-square fa-2x"></i>
+                    <h3>script writing</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, culpa laborum sed dolores facere cum odit placeat doloribus vero minima. </p>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-video fa-2x"></i>
+                    <h3>video editing</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, culpa laborum sed dolores facere cum odit placeat doloribus vero minima. </p>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-code fa-2x"></i>
+                    <h3>web desgin</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur, culpa laborum sed dolores facere cum odit placeat doloribus vero minima.</p>
+                </div>
             </div>
-            <div class="overlay"></div>
+            </div>
     </section>
 
     <section class="my-projects" id="projects">
-        <h2 class="spical-title center">my projects</h2>
-        <div class="prjects-container flex container center">
-            <div class="project" data-aos="fade-right" data-aos-duration="3000">
-                <img src="images/rupa2.png" alt="rupa-project">
-                <div class="project-information">
-                    <h3>rupa project </h3>
-                    <div class="languages"><span>#HTML5</span> <span>#CSS3</span> <span>#JS</span></div>
-                    <div class="paragraphs">
-                        <p> I  handle 4 external Api's to displays information about random users .</p>
-                        <p> I apply "MVC" principle .</p>
-
-
-                    </div>
-                    <a href="https://bit-academy-rupa.vercel.app/" ><button class="btn demo-btn">Demo</button></a>
+        <div class="container">
+        <h2 class="spical-title">my projects</h2>
+        <div class="prjects-container flex center">
+            <div class="project" >
+                <div class="project-img">
+                    <img src="images2/shopping4.jpg" alt="shopping cart">
                 </div>
-            </div>
-            <div class="project" data-aos="fade-left" data-aos-duration="3000">
-                <img src="images/shopping cart.png" alt="shoppingcard-project">
-                <div class="project-information">
-                    <h3>shopping cart</h3>
-                    <div class="languages"><span>#HTML5</span> <span>#CSS3</span> <span>#JS</span></div>
+                <h3>shopping cart </h3>
+                <div class="overlay-project">
+                    <h3>shopping cart </h3>
                     <div class="paragraphs">
                         <p>This project has two types of accounts [ admin , user ]</p>
                         <p>admin account can add , edit ,remove product and user account can buy it</p>
                     </div>
-                    <a href="https://shopping-card.vercel.app/index.html" ><button class="btn demo-btn">Demo</button></a>
+                    <div class="languages"><span>#HTML5</span> <span>#CSS3</span> <span>#JS</span></div>
+                    <div>
+                        <a href="https://shopping-card.vercel.app/index.html" aria-label="shopping cart"><i class="fa-solid fa-up-right-from-square"></i></a>                    
+                    </div>
                 </div>
             </div>
-            <div class="project" data-aos="fade-down" data-aos-duration="3000">
-                <img src="images/reflex2.png" alt="reflix-project">
-                <div class="project-information">
-                    <h3>reflex project </h3>
-                    <div class="languages"><span>#HTML5</span> <span>#CSS3</span> <span>#JS</span></div>
+            <div class="project" >
+                <div class="project-img">
+                    <img src="images2/netflix.jpg" alt="netflix-project">
+                </div>
+                <h3>reflix project</h3>
+                <div class="overlay-project">
+                    <h3>reflix project</h3>
                     <div class="paragraphs">
                         <p>I retrieve some films from API by axsios package</p>
                         <p>the user can see film's information and if the user like this film he can rent it</p>
                     </div>
-                    <a href="https://reflix-project.vercel.app/" ><button class=" btn demo-btn">Demo</button></a>
+                    <div class="languages"><span>#HTML5</span> <span>#CSS3</span> <span>#JS</span></div>
+                    <div>
+                        <a href="https://reflix-project.vercel.app/" aria-label="reflix-project"><i class="fa-solid fa-up-right-from-square"></i></a>                    
+                    </div>
+                </div>
+            </div>
+            <div class="project" >
+                <div class="project-img">
+                    <img src="images2/pokemon.jpg" alt="pokemon">
+                </div>
+                <h3>rupa project</h3>
+                <div class="overlay-project">
+                    <h3>rupa project</h3>
+                    <div class="paragraphs">
+                        <p> I  handle 4 external Api's to displays information about random users .</p>
+                        <p> I apply "MVC" principle </p>
+                    </div>
+                    <div class="languages"><span>#HTML5</span> <span>#CSS3</span> <span>#JS</span></div>
+                    <div>
+                        <a href="https://bit-academy-rupa.vercel.app/" aria-label="rupa project "><i class="fa-solid fa-up-right-from-square"></i></a>                    
+                    </div>
                 </div>
             </div>
         </div>
+        <a href="https://github.com/AnasAttar10" class="center"><button class="btn"> see more </button></a>
+        </div>
     </section>
 
-    <section class="contact-me center " id="contactme">
+    <section class="contact-me " id="contactme">
+        <div class="container">
         <h2 class="spical-title">Contact me </h2>
-        <div class="flex container">
+        <div class="flex">
                 <div class="social-media-container flex">
                     <div>
-                        <div class="icon-container"><i class="fa-brands fa-linkedin fa-2x"></i></div>
+                        <i class="fa-brands fa-linkedin fa-2x"></i>
                         <a href="https://www.linkedin.com/in/anas-attar-495433201/"><h3>my LinkedIn</h3></a> 
                     </div>
                     <div>
-                        <div class="icon-container"><i class="fa-brands fa-square-whatsapp fa-2x"></i></div>
+                        <i class="fa-brands fa-square-whatsapp fa-2x"></i>
                         <a href="https://api.whatsapp.com/send/?phone=972597643964"><h3>+970597643964</h3></a> 
                     </div>
                     <div>
-                        <div class="icon-container"><i class="fa-solid fa-envelope fa-2x"></i></div>
+                        <i class="fa-solid fa-envelope fa-2x"></i>
                         <a href="#"><h3>anasattar2010@gmail.com</h3></a> 
+                    </div>
+                    <div class="other-social-media">
+                        <i class="fa-brands fa-facebook fa-2x"></i>
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                        <i class="fa-brands fa-square-twitter fa-2x"></i>
                     </div>
                 </div>
                 <form>
                     <div>
-                        <label for="yourname">your name</label>
-                        <input type="text" id="yourname">
+                        <input type="text" id="yourname" placeholder="your name">
                     </div>
                     <div>
-                        <label for="youremail">your email</label>
-                        <input type="text" id="youremail">
+                        <input type="text" id="youremail" placeholder="your email ">
                     </div>
                     <div>
-                        <label for="yourmessage">your message</label>
-                        <textarea name="your-message" id="yourmessage" cols="80" rows="10"></textarea>
+                        <textarea name="your-message" id="yourmessage" cols="80" rows="10" placeholder="your message "></textarea>
                     </div>
                         <button class="btn">send</button>
                 </form>
+        </div>
         </div>
     </section>
     </main>
