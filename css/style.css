@@ -2,20 +2,20 @@
     --secondColor:#35302E;
     --mainColor:#ff0047;
 
-  }
-  html{
+}
+html{
     scroll-behavior: smooth;
-  }
+}
 *{
     padding: 0;
     margin: 0;
     background-size: cover;
     box-sizing: border-box;
     text-transform: capitalize;
-    font-family: 'Poppins' ,sans-serif;
 }
 body{
   background-color:#090809;
+  font-family: 'Open Sans', sans-ser;
   color: #fff; 
 
 }   
@@ -39,19 +39,28 @@ img {
     margin: auto;
 }
 .spical-title{
-    font-size: 60px;
-    font-weight: 600;
+    font-size: 2rem;
     color: #fff;
-
+}
+h1{
+    font-size: 3.5rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    padding: 20px 0;
+    color: white;
+    font-size: 1rem;
+    /* line-height: 25px;    */
 }
 .about-me ,.my-services , .my-projects , .contact-me{
-    padding: 80px 10px 20px ;
+    padding: 40px 10px 20px ;
 }
 .btn{
     padding: 14px 60px;
     cursor: pointer;
     background-color: var(--mainColor);
-    font-size: 15px;
     color: white;
     border: none;
     border-radius: 4px;
@@ -85,7 +94,7 @@ nav{
     color: var(--mainColor);
 }
 .bar{
-   color: var(--mainColor);
+   color: white;
    cursor: pointer;
    display: block;
    position: relative;
@@ -98,8 +107,9 @@ nav{
 header{
     height: 100vh;
     position: relative;
-    background-image: url("../images2/background.png");
+    background-image: url("../images2/background5.webp");
     background-attachment: fixed;
+    background-color: rgba(0,0,0,0.2);
 }
 .my-information-container{
     height: inherit;
@@ -108,16 +118,9 @@ header{
     align-items: start;
 }
 .my-information-container p {
-    padding: 20px 0;
     width: 50%;
-    color: white;
-    font-size: 18px;
-    line-height: 30px;
 }
-.my-information-container h1{
-    font-size: 60px;
-    margin: 20px 0 ;
-}
+
 .my-information-container span {
     color: var(--mainColor);
     font-weight: bold
@@ -148,7 +151,7 @@ header{
     padding: 10px 5px ;
     line-height: 1.4;
 }
-.my-skills2{
+.my-skills{
     padding: 10px ;
 }
 .about-me-information ul {
@@ -158,12 +161,12 @@ header{
 .about-me-information ul li {
     padding: 5px;
 }
-.my-skills2 h3{
+.my-skills h3{
     position: relative;
     padding: 5px 0 ;
     margin: 10px 0;
 }
-.my-skills2 h3::after{
+.my-skills h3::after{
     content: "";
     width:50px;
     position: absolute;
@@ -198,14 +201,13 @@ header{
     padding: 10px 0;
 }
 .service > h3 {
-    font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
     padding: 10px 0;
 }
-.service > p{
+/* .service > p{
     font-size: 15px;
-}
+} */
 .service:hover{
     background-color: var(--mainColor);
     transform: translateY(-10px);
@@ -251,10 +253,17 @@ header{
 .project:hover .overlay-project{
     height: 100%;
 }
-.project h3 {
-    font-size: 30px;
-    font-weight: 500;
-    padding: 20px 0;
+
+.project p {
+    padding: 0 10px 10px 10px ;
+    text-align: left;
+}
+.project h3{
+    padding: 10px ;
+}
+.project h5{
+    padding: 10px;
+    text-align: left;
 }
 .project-img{
     width: 100%;
@@ -288,9 +297,11 @@ header{
     padding: 10px ;
     background-color: var(--secondColor);
     border-radius: 4px ;
+    overflow: auto;
+    height: 150px;
 }
 .project .paragraphs p {
-    font-size: 13px;
+    /* font-size: 13px; */
     text-align: left;
     padding: 5px 0;
 }
@@ -309,7 +320,7 @@ header{
     color: #ff70c1;
 }
 
-.prjects-container + a {
+.see-more {
     display: block;
     margin: auto;
 }
@@ -338,18 +349,16 @@ header{
     display: block;
     width: 100%;
     padding: 10px;
-    font-size: 20px;
     border: none;
 }
 .contact-me  form input{
-    border-radius: 15px;
+    border-radius: 4px;
     box-sizing: border-box;
 }
 .contact-me  form textarea{
     width: 100%;
     padding: 10px;
-    font-size: 20px;
-    border-radius: 15px;
+    border-radius: 4px;
 }
 
 .social-media-container{
@@ -361,10 +370,6 @@ header{
     margin: 5px 0 
 }
 
-.social-media-container i {
-    cursor: pointer;
-    color:#ff0047;
-}
 .social-media-container > div {
     display: flex;
     align-items: center;
@@ -378,11 +383,12 @@ header{
 .icon-container:hover {
     background-color: var(--secondColor);
 }
-.other-social-media > i {
+.other-social-media  i {
+    cursor: pointer;
     color: #fff;
     transition: transform 0.5s , color 0.5s ;
 }
-.other-social-media > i:hover{
+.other-social-media  i:hover{
     color: var(--mainColor);
     transform: translateY(-5px);
 }
@@ -400,9 +406,6 @@ footer > p {
 /* start media query  */
 
 @media (max-width: 575.98px){
-    header{
-        background-image: url("../images2/phone-background.png");
-    }
     .myname{
         font-size: 60px;
     }
@@ -452,11 +455,11 @@ footer > p {
         background-color: var(--secondColor);
         border-radius: 15px;
     }
-    .my-skills2 h3{
+    .my-skills h3{
         position: relative;
         padding: 5px 0 ;
     }
-    .my-skills2 h3::after{
+    .my-skills h3::after{
         content: "";
         color: white;
         width: 20%;
@@ -507,9 +510,6 @@ footer > p {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
-    header{
-        background-image: url("../images2/phone-background.png");
-    }
     .myname{
         font-size: 60px;
     }
@@ -559,11 +559,11 @@ footer > p {
         background-color: var(--secondColor);
         border-radius: 15px;
     }
-    .my-skills2 h3{
+    .my-skills h3{
         position: relative;
         padding: 5px 0 ;
     }
-    .my-skills2 h3::after{
+    .my-skills h3::after{
         content: "";
         color: white;
         width: 20%;
@@ -615,9 +615,6 @@ footer > p {
 
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    header{
-        background-image: url("../images2/phone-background.png");
-    }
     .myname{
         font-size: 60px;
     }
@@ -663,15 +660,14 @@ footer > p {
     .about-me .about-me-information{
         width: 100%;
         padding: 40px 20px;
-        /* padding: 10px ; */
         background-color: var(--secondColor);
         border-radius: 15px;
     }
-    .my-skills2 h3{
+    .my-skills h3{
         position: relative;
         padding: 5px 0 ;
     }
-    .my-skills2 h3::after{
+    .my-skills h3::after{
         content: "";
         color: white;
         width: 20%;
@@ -723,9 +719,6 @@ footer > p {
 
 
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-    header{
-        background-image: url("../images2/phone-background.png");
-    }
     .myname{
         font-size: 60px;
     }
@@ -771,15 +764,14 @@ footer > p {
     .about-me .about-me-information{
         width: 100%;
         padding: 40px 20px;
-        /* padding: 10px ; */
         background-color: var(--secondColor);
         border-radius: 15px;
     }
-    .my-skills2 h3{
+    .my-skills h3{
         position: relative;
         padding: 5px 0 ;
     }
-    .my-skills2 h3::after{
+    .my-skills h3::after{
         content: "";
         color: white;
         width: 20%;
